@@ -1,12 +1,26 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="login">LOGIN</string>
-    <string name="facebook">facebook</string>
-    <string name="twitter">twitter</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
+    <string name="login">Sign In</string>
+    <string name="facebook"></string>
+    <string name="google"></string>
+    <string name="email">Enter your Email</string>
+    <string name="password">......</string>
+    <string name="email_text">Email</string>
+    <string name="password_text">Password</string>
     <string name="forgot">Forgot password ?</string>
     <string name="account_dont">Don\'t have an account?</string>
     <string name="sign_up">SIGN UP</string>
+    <string name="login_btn">LOGIN</string>
     <string name="or">OR</string>
+    <string name="sign_in_with">Sign in with </string>
+    <string name="Sign_up">Sign Up </string>
+    <string name="full_name">Full Name </string>
+    <string name="Phone_No">Phone No </string>
+    <string name="name_hint"> Enter your Name </string>
+    <string name="pwd"> Enter your Password </string>
+    <string name="phone_hint">Enter your Phone No </string>
+    <string name="Confirm_pwd">Confirm Password </string>
+    <string name="register">Register</string>
+    <string name="have_acc">Have an Account ?</string>
+    <string name="remember_me">Remember me</string>
 </resources>

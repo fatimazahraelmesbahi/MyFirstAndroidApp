@@ -10,9 +10,9 @@ public class UserDaoMemory implements UserDao{
 
     public UserDaoMemory(){
         users= new Vector<>();
-        users.add(new User("fatimzehra@gmail.com","salut","faty"));
-        users.add(new User("fatim@gmail.com","salut","fatim"));
-        users.add(new User("zehra@gmail.com","salut","zehra"));
+        users.add(new User("fatimzehra@gmail.com","salut","faty",12345));
+        users.add(new User("fatim@gmail.com","salut","fatim",1234));
+        users.add(new User("zehra@gmail.com","salut","zehra",1234));
     }
     @Override
     public User get(String login) {

@@ -6,5 +6,4 @@ import java.util.List;
 
 public interface Services {
     User login(String login,String pwd);
-
 }

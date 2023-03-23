@@ -13,7 +13,6 @@ import com.mehditmimi.myapplication.models.User;
 public class AythentificationAction implements View.OnClickListener {
     private EditText emailInput;
     private EditText pwdInput;
-
     private MainActivity mainActivity;
 
     public AythentificationAction(MainActivity mainActivity){
@@ -33,10 +32,24 @@ public class AythentificationAction implements View.OnClickListener {
         User user = mainActivity.getServices().login(emailInput.getText().toString(), pwdInput.getText().toString());
         if(user!=null){
             //Toast.makeText(mainActivity,"hey"+user.getName(),Toast.LENGTH_SHORT).show();
+            /*Intent intent = new Intent(mainActivity, AccueilActivity.class);
+            mainActivity.startActivity(intent);*/
+            Toast.makeText(mainActivity,"Hi"+user.getName(),Toast.LENGTH_SHORT ).show();
             Intent intent = new Intent(mainActivity, AccueilActivity.class);
+            intent.putExtra("name",user.getName());
             mainActivity.startActivity(intent);
+            mainActivity.finish();
         }
         else
             Toast.makeText(mainActivity,"error",Toast.LENGTH_SHORT).show();
     }
+
 }
+//setExtra getExtra
+//jsp w les sessions
+//rest api et le client c'est ajax
+//kolchi kayn ghir mongoose la
+//bd memoire
+//bd json ou memoire
+//mvc f node js
+//

@@ -1,16 +1,29 @@
 package com.mehditmimi.myapplication.models;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
     private String name;
     private String pwd;
     private String email;
 
+    private int phone;
 
-    public User(String email, String pwd, String name) {
+
+    public User(String email, String pwd, String name,int phone) {
         this.email = email;
         this.pwd = pwd;
         this.name = name;
+        this.phone = phone;
 
+    }
+
+    public int getPhone() {
+        return phone;
+    }
+
+    public void setPhone(int phone) {
+        this.phone = phone;
     }
 
     public String getName() {
